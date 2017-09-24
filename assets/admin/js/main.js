@@ -20,14 +20,13 @@ Version: 1.0
         });
 
         /*---------------------------------------------------
-                    ScrollTop
+                    Datatable
         ---------------------------------------------------*/
 
-        $('#scrollTop').on('click', function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000);
-            return false;
+        $(document).ready(function () {
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
         });
 
         /*---------------------------------------------------

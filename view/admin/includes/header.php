@@ -1,3 +1,8 @@
+<?php
+if(!isset($_SESSION)){
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,15 +17,20 @@
     <title>Admin Panel</title>
 
     <!-- Base File //All file include on my root directory -->
-    <base href="http://localhost/imran/php_quickstart/project_01/">
+    <base href="http://localhost/imran/oop_project/project_01/">
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- MetisMenu CSS -->
     <link href="assets/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
+    <!-- DataTables CSS -->
+    <link href="assets/admin/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="assets/admin/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+   
     <!-- Custom CSS -->
     <link href="assets/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
